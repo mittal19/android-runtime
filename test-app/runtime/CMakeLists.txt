@@ -183,7 +183,8 @@ if (OPTIMIZED_BUILD OR OPTIMIZED_WITH_INSPECTOR_BUILD)
     )
 else ()
     set_target_properties(
-        NativeScript PROPERTIES LINK_FLAGS -Wl,--allow-multiple-definition
+        NativeScript
+        PROPERTIES LINK_FLAGS -Wl,--allow-multiple-definition
         INTERFACE_INCLUDE_DIRECTORIES NATIVES_BLOB_INCLUDE_DIRECTORIES
     )
 endif ()
